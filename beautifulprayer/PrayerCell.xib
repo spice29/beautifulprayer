@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="PrayerCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-Vi-XiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAv-Pi-boP" userLabel="PrayerTIme">
+                        <rect key="frame" x="8" y="41" width="398" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="398" id="MtJ-Yx-fqz"/>
+                            <constraint firstAttribute="height" constant="80" id="aQz-V7-1Jf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MtJ-Yx-fqz"/>
+                                <exclude reference="aQz-V7-1Jf"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6b-3O-KIy" userLabel="PrayerName">
+                        <rect key="frame" x="16" y="8" width="390" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Fwe-d3-Qtq"/>
+                            <constraint firstAttribute="width" constant="398" id="MMc-av-iJt"/>
+                            <constraint firstAttribute="height" constant="24" id="aQy-Pl-pyu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MMc-av-iJt"/>
+                                <exclude reference="aQy-Pl-pyu"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HAv-Pi-boP" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="1.5" id="4MU-PH-ro6"/>
+                    <constraint firstItem="j6b-3O-KIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="AGb-Km-MPB"/>
+                    <constraint firstItem="HAv-Pi-boP" firstAttribute="top" secondItem="j6b-3O-KIy" secondAttribute="bottom" constant="8" id="BbV-1o-mG6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aZc-Vi-XiZ" secondAttribute="trailing" constant="-8" id="D07-Rf-abp"/>
+                    <constraint firstItem="j6b-3O-KIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Fsi-Lw-PzV"/>
+                    <constraint firstItem="HAv-Pi-boP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="HBr-Pc-h4v"/>
+                    <constraint firstItem="j6b-3O-KIy" firstAttribute="leading" secondItem="HAv-Pi-boP" secondAttribute="trailing" constant="-388" id="IC0-e0-zqN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HAv-Pi-boP" secondAttribute="bottom" constant="-0.5" id="Jmt-LW-v0c"/>
+                    <constraint firstItem="j6b-3O-KIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MGt-GI-Hwr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aZc-Vi-XiZ" secondAttribute="bottom" constant="-8.5" id="Mez-VK-5gp"/>
+                    <constraint firstItem="HAv-Pi-boP" firstAttribute="top" secondItem="j6b-3O-KIy" secondAttribute="bottom" constant="50" id="TQV-Mo-gM4"/>
+                    <constraint firstItem="j6b-3O-KIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="Yke-G4-taE"/>
+                    <constraint firstItem="aZc-Vi-XiZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="dFS-OD-uh1"/>
+                    <constraint firstItem="j6b-3O-KIy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gAQ-Wa-yOe"/>
+                    <constraint firstItem="aZc-Vi-XiZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="hdU-41-E46"/>
+                    <constraint firstItem="HAv-Pi-boP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="kRM-ic-YHP"/>
+                    <constraint firstItem="HAv-Pi-boP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="okF-Wh-gUO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="j6b-3O-KIy" secondAttribute="trailing" id="uWy-Jx-FjD"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="AGb-Km-MPB"/>
+                        <exclude reference="IC0-e0-zqN"/>
+                        <exclude reference="MGt-GI-Hwr"/>
+                        <exclude reference="Yke-G4-taE"/>
+                        <exclude reference="Jmt-LW-v0c"/>
+                        <exclude reference="TQV-Mo-gM4"/>
+                        <exclude reference="okF-Wh-gUO"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="prayerImageView" destination="aZc-Vi-XiZ" id="5Nc-Tn-vas"/>
+                <outlet property="prayerNameLabel" destination="j6b-3O-KIy" id="abn-4c-yoU"/>
+                <outlet property="prayerTimeLabel" destination="HAv-Pi-boP" id="crV-rX-Vi8"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="404.5"/>
+        </tableViewCell>
+    </objects>
+</document>
